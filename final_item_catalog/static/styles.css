@@ -1,0 +1,62 @@
+a {
+ 	font-size: 14px;
+ 	color: #0093B9;
+ 	line-height: 17px;
+ }
+
+.btn.delete:hover {
+	border-color: yellow;
+	color: red;
+}
+
+.btn {
+	padding: 20px;
+	border-color: green;
+	border-width: 2px;
+	color: #9FB80A;;
+}
+.btn:hover {
+	border-color: blue;
+}
+.btn.delete {
+	border-color: black;
+	color: #aaaaaa;
+}
+
+.top-menu {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.top-menu p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+.top-menu a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #7B7573;
+	font-weight: 400;
+}
+
+.divider {
+	height: 15px;
+}
+.banner.main {
+	height: 10510px;
+	background: url("/static/top-banner.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+.flash {
+	background-color: #98FB98;
+	width:100%;
+	text-decoration: none;
+
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+
+}

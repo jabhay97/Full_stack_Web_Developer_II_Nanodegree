@@ -1,0 +1,16 @@
+<header style="background-color:#000099; height: 120px; border-radius: 20px; margin: 5px 5px">
+<div class="row top-menu">
+	<div class="col-md-6">
+		<a href="{{url_for('showCompany')}}">
+			<h2 style="color:white; padding-top:0px; padding-left:10px";><b><i>Company's Product Catalog</b></i></h2>
+		</a>
+	</div>
+	<div class="col-md-6 text-right">
+	{%if 'username' not in session %}
+		<a style="text-decoration: none" href="{{url_for('showLogin')}}"><h2 style="color:white; padding-right:80px">Login</h2></a>
+		{% else %}
+		<a style="text-decoration: none" href="{{url_for('gdisconnect')}}"><h2 style="padding-right: 20px; padding-top: 10px">LogOut</h2></a>
+		{% endif %}
+	</div>
+</div></div>
+</header>

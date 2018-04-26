@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <h1 id='top' style="font-family:Georgia;color: white">CITY TOUR GUIDE (Chandigarh)</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 search">
+                <h2 id="head" style="color: white">Search your Favourite Places of Chandigarh here -></h2>
+                <input class="search-box" placeholder="Enter Text to filter locations" id="searchBox" data-bind="value:filteredLocation,event:{keyup:test},valueUpdate:'afterkeydown'">
+            </div>
+            <div class="main" id="main">
+                <div class="lists" id="lists">
+                    <ul class="results" id="results" data-bind="foreach:markerArray">
+                        <li class="place" id="place" data-bind="visible:list,text:name,click:markerListener"></li>
+                    </ul>
+                </div>
+                <div class="map" id="map">Error loading Google Maps. Please Try Again.</div>
+            </div>
+        </div>
+    </div>
+    <script src='js/jquery-1.12.0.min.js'></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src='js/apps.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtkpPdLoNizK3QvW8dhuam2bdjra7UtS4&callback=initMap" type="text/javascript" onerror="mapError()">
+    </script>
+</body>
+
+</html>

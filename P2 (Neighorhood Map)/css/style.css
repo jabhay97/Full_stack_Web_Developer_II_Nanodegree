@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	font-family: comic sans ms;
+	background-color: maroon;
+	text-align: center;
+}
+
+#searchBox {
+	font-size: 1.5em;
+	flex-grow: 1;
+	width: auto;
+	height: 50px;
+	
+}
+.search {
+	width: auto;
+	display: flex;
+}
+
+#head {
+	width:auto;
+	display: flex;
+}
+
+
+#main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+#lists {
+	order: 2;
+	flex-grow: 1.5;
+	
+}
+
+.map {
+	order: 1;
+	flex-grow: 3.5; 
+	height: 1100px;
+}
+
+.results {
+	margin: 0;
+	padding: 0;
+}
+
+.place {
+    margin: 9px;
+    padding: 9px;
+    list-style: none;
+    background-color: yellow;
+}
+
+
+@media only screen and (max-device-width : 959px), only screen and (max-width : 959px)  {
+
+.main {
+	flex-direction: column;
+}
+
+
+#searchBox, #lists {
+	font-size: 1.5em;
+}
+
+}

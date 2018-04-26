@@ -1,0 +1,10 @@
+Link : ec2-35-154-246-104.ap-south-1.compute.amazonaws.com
+Public IP: 35.154.246.104
+
+Username: grader
+Username: grader
+
+Database Username: catalog
+Database password: catalog
+
+passphrase: abhay
